@@ -1,5 +1,5 @@
 package com.hencesimplified.mvvmretrofitsample.model
 
-data class Animal (
+data class Animal(
     val name: String?
 )
