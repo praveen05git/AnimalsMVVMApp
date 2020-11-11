@@ -21,13 +21,18 @@ class ListFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
+
+
+    /*
+    //Button to navigate to other activity
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //Button to navigate to other activity
+
         detailsButton.setOnClickListener(View.OnClickListener {
             val action : NavDirections = ListFragmentDirections.actionDetail()
             Navigation.findNavController(it).navigate(action)
         })
     }
+    */
 }
