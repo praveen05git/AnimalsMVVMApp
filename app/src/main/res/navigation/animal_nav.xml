@@ -9,7 +9,7 @@
         android:id="@+id/listFragment"
         android:name="com.hencesimplified.mvvmretrofitsample.view.ListFragment"
         android:label="fragment_list"
-        tools:layout="@layout/fragment_list" >
+        tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/actionDetail"
             app:destination="@id/detailFragment" />
@@ -18,7 +18,7 @@
         android:id="@+id/detailFragment"
         android:name="com.hencesimplified.mvvmretrofitsample.view.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" >
+        tools:layout="@layout/fragment_detail">
         <action
             android:id="@+id/actionList"
             app:destination="@id/listFragment" />
