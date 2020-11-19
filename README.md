@@ -1,8 +1,5 @@
-<h1 align="center">Animals App</h1>
-
-<p align="center">  
+## Animals App
 App to demonstrate MVVM, Retrofit and RxJava
-</p>
 </br>
 
 ## Features
