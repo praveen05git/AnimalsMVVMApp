@@ -15,4 +15,3 @@ App to demonstrate MVVM, Retrofit and RxJava
 - JetPack components: Navigation, LiveData, ViewModel
 - Implemented DataBinding
 - Glide and Palette Library for loading images and colors
-</br>
