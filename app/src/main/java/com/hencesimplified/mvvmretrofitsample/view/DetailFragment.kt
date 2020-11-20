@@ -29,7 +29,6 @@ class DetailFragment : Fragment() {
         // Inflate the layout for this fragment
 
         dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail, container, false)
-        //return inflater.inflate(R.layout.fragment_detail, container, false) Implemented Data binding
         return dataBinding.root
     }
 
@@ -40,26 +39,11 @@ class DetailFragment : Fragment() {
             animal = DetailFragmentArgs.fromBundle(it).animal
         }
 
-/*
-        context?.let {
-            dataBinding.animalDetailImage.loadImage(animal?.imageUrl, getProgressDrawable(it))
-        }
-*/
-
-        /*
-        Data Binding has been implemented
-        animalDetailName.text = animal?.name
-        animalDetailLocation.text = animal?.location
-        animalDetailLifespan.text = animal?.lifeSpan
-        animalDetailDiet.text = animal?.diet
-         */
-
         animal?.imageUrl?.let {
             setupBackgroundColor(it)
         }
 
         dataBinding.animal = animal
-
 
     }
 
@@ -72,7 +56,6 @@ class DetailFragment : Fragment() {
                     Palette.from(resource)
                         .generate() { palette ->
                             val intColor = palette?.lightMutedSwatch?.rgb ?: 0
-                            //dataBinding.animalDetailLayout.setBackgroundColor(intColor) Databinding
                             dataBinding.palette = AnimalPalette(intColor)
                         }
                 }

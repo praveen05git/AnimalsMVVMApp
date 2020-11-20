@@ -68,18 +68,4 @@ class ListFragment : Fragment() {
             refreshLayout.isRefreshing = false
         }
     }
-
-
-    /*
-    //Button to navigate to other activity
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
-        detailsButton.setOnClickListener(View.OnClickListener {
-            val action : NavDirections = ListFragmentDirections.actionDetail()
-            Navigation.findNavController(it).navigate(action)
-        })
-    }
-    */
 }
