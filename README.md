@@ -1,11 +1,23 @@
-## Animals App
-App to demonstrate MVVM, Retrofit and RxJava
+<h1 align="center">Animals App</h1>
+
+<p align="center">  
+ App to demonstrate MVVM, Retrofit and RxJava</br>
+</p>
 </br>
+<p align="center">
+  <img src="/previews/AnimalsAppGif1.gif"/>
+  <img src="/previews/AnimalsAppGif2.gif"/>
+</p>
 
 ## Features
 - List of Animals
 - Details about each animal
 - Color Palettes matching animal photos
+
+<p align="center">
+  <img src="/previews/AnimalsAppGif1.gif"/>
+  <img src="/previews/AnimalsAppGif2.gif"/>
+</p>
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 16
