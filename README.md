@@ -5,8 +5,8 @@
 </p>
 </br>
 <p align="center">
-  <img src="/previews/AnimalsAppGif1.gif" width="21%"/>
-  <img src="/previews/AnimalsAppGif2.gif" width="21%"/>
+  <img src="/previews/Screenshot_1609479015.png" width="21%"/>
+  <img src="/previews/Screenshot_1609479025.png" width="21%"/>
 </p>
 
 ## Features
