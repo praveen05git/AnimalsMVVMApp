@@ -5,6 +5,7 @@ App to demonstrate MVVM, Retrofit and RxJava
 ## Features
 - List of Animals
 - Details about each animal
+- Color Palettes matching animal photos
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 16
