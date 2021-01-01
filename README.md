@@ -25,5 +25,6 @@
 - MVVM Architecture
 - Retrofit and RxJava is used to consume the API
 - JetPack components: Navigation, LiveData, ViewModel
+- Used ButterKnife to bind UI elements
 - Implemented DataBinding
 - Glide and Palette Library for loading images and colors
