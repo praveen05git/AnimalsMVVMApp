@@ -5,8 +5,8 @@
 </p>
 </br>
 <p align="center">
-  <img src="/previews/AnimalsAppGif1.gif"/>
-  <img src="/previews/AnimalsAppGif2.gif"/>
+  <img src="/previews/AnimalsAppGif1.gif" width="21%"/>
+  <img src="/previews/AnimalsAppGif2.gif" width="21%"/>
 </p>
 
 ## Features
@@ -15,8 +15,8 @@
 - Color Palettes matching animal photos
 
 <p align="center">
-  <img src="/previews/AnimalsAppGif1.gif"/>
-  <img src="/previews/AnimalsAppGif2.gif"/>
+  <img src="/previews/AnimalsAppGif1.gif" width="21%"/>
+  <img src="/previews/AnimalsAppGif2.gif" width="21%"/>
 </p>
 
 ## Tech stack & Open-source libraries
