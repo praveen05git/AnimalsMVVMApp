@@ -4,7 +4,9 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import com.hencesimplified.mvvmretrofitsample.di.AppModule
+//import com.hencesimplified.mvvmretrofitsample.di.CONTEXT_APP
 import com.hencesimplified.mvvmretrofitsample.di.DaggerViewModelComponent
+//import com.hencesimplified.mvvmretrofitsample.di.TypeOfContext
 import com.hencesimplified.mvvmretrofitsample.model.Animal
 import com.hencesimplified.mvvmretrofitsample.model.AnimalApiService
 import com.hencesimplified.mvvmretrofitsample.model.ApiKey
@@ -13,6 +15,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver
 import io.reactivex.schedulers.Schedulers
+import retrofit2.http.Field
 import javax.inject.Inject
 
 class ListViewModel(application: Application) : AndroidViewModel(application) {
@@ -33,6 +36,7 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
     lateinit var apiService: AnimalApiService //DI
 
     @Inject
+    //@field:TypeOfContext(CONTEXT_APP) //Choosing the context
     lateinit var prefs: SharedPreferencesHelper //DI
 
     private var invalidApiKey = false
@@ -42,6 +46,7 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
         DaggerViewModelComponent.create().injectAll(this)
     }
      */
+
     init {
         DaggerViewModelComponent.builder()
             .appModule(AppModule(getApplication()))
