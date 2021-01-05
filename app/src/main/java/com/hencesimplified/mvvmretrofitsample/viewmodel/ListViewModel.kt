@@ -3,6 +3,7 @@ package com.hencesimplified.mvvmretrofitsample.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
+import com.hencesimplified.mvvmretrofitsample.di.AppModule
 import com.hencesimplified.mvvmretrofitsample.di.DaggerViewModelComponent
 import com.hencesimplified.mvvmretrofitsample.model.Animal
 import com.hencesimplified.mvvmretrofitsample.model.AnimalApiService
@@ -22,15 +23,30 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
 
     private val disposable = CompositeDisposable()
 
-    //private val apiService = AnimalApiService()
+    /*
+    Before DI
+    private val apiService = AnimalApiService()
+    private val prefs = SharedPreferencesHelper(getApplication())
+     */
+
     @Inject
     lateinit var apiService: AnimalApiService //DI
 
-    private val prefs = SharedPreferencesHelper(getApplication())
+    @Inject
+    lateinit var prefs: SharedPreferencesHelper //DI
+
     private var invalidApiKey = false
 
+    /* Since PrefsModule needs an argument to be passed this init can't be used
     init {
-        DaggerViewModelComponent.create().inject(this)
+        DaggerViewModelComponent.create().injectAll(this)
+    }
+     */
+    init {
+        DaggerViewModelComponent.builder()
+            .appModule(AppModule(getApplication()))
+            .build()
+            .injectAll(this)
     }
 
     fun refresh() {
