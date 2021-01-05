@@ -46,6 +46,7 @@ def retrofitVersion = '2.3.0'
 def glideVersion = '4.9.0'
 def rxJavaVersion = '2.1.1'
 def navVersion = '2.1.0-alpha05'
+def daggerVersion = '2.14.1'
 
 dependencies {
 
@@ -78,4 +79,9 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glideVersion"
 
     implementation "com.android.support:palette-v7:$supportVersion"
+
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
 }
