@@ -1,7 +1,7 @@
 <h1 align="center">Animals App</h1>
 
 <p align="center">  
- App to demonstrate MVVM, Retrofit and RxJava</br>
+ Animals App using Kotlin, Jetpack components, MVVM, Retrofit and RxJava</br>
 </p>
 </br>
 <p align="center">
